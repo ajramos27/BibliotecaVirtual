@@ -1,0 +1,70 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13/04/2015, 12:23:14 PM
+    Author     : A09000717
+*/
+
+#logotipo{
+    float: left;
+    width: 20%; 
+}
+#titulo{
+    float: left;
+     text-align:center;
+    width: 40%; 
+    font-size: 30px;
+}
+#login{
+    float: right;
+    width: 40%; 
+}
+#menu { clear: both; 
+        text-align:center;
+        font-size:30px;
+        color: blue;
+        background-color: #ff7f24;
+}
+.portada {
+width: 250px;
+height: 400px ;
+
+
+}
+
+.listalibros{
+
+display:block;
+overflow: auto;
+}
+
+
+html{
+	
+	
+}
+#todo{
+	overflow-x: visible;
+	white-space: nowrap;
+	
+}
+body{
+	background-color: #ffec8b;
+	font-family:Papyrus;
+	color: #8b0000;
+	overflow: visible;
+	width : auto;
+}
+
+footer{
+	background-color: #ff7f24;
+	text-align:center;
+	font-size: 24px;
+}
+
+h2{
+	background-color: #99cc32;
+}
