@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Bienvenido a la Biblioteca Virtual</title>
+        <link rel="stylesheet" type="text/css" href="estilos.css" title="style">
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="estilos.css" title="style">
+        <script type="text/javascript"> 
+        
+        function enviar(){
+			
+						
+			var nombre= document.getElementById('nombre').value;
+			var email= document.getElementById('email').value;
+			var usuario= document.getElementById('usuario').value;
+			var contrasena= document.getElementById('contrasena').value;
+			
+			if(nombre=="" || email=="" || usuario=="" || contrasena==""){
+				
+			
+			if(nombre=="" && email=="" && usuario=="" && contrasena==""){
+				alert("Ingresar datos requeridos");
+				datos.nombre.focus();
+				
+			} else{
+				if(nombre==""){
+					alert("Nombre requerido");
+					datos.nombre.focus();
+					
+				}
+				if(email==""){
+					alert("Email requerido");
+					datos.email.focus();
+					
+				}
+				
+				if(usuario==""){
+					alert("Usuario requerido");
+					datos.usuario.focus();
+					
+				}
+				
+				if(contrasena==""){
+					alert("Contraseña requerida");
+					datos.contrasena.focus();
+					
+				} 
+				
+			}
+			}else{
+				
+				
+			/*	var patron=/^[A-Za-z0-9_]*@[A-Za-z0-9_]+\.[A-Za-z0-9_.]+[A-za-z]$/;
+				if(!patron.test(email)){
+					alert("Formato email incorrecto");
+					datos.email.focus();
+					
+				}else{ */
+				
+				alert("Registro Exitoso");
+				}
+			}
+
+		
+        	
+        </script>
+    </head>
+    
+    <body>
+    	<div id="todo">
+        
+        <div id="header">
+            <div id="logotipo"> <img src="ebooks-laptop2.jpg" width="250" height="150"></div>
+            <div id="titulo"><h1>Biblioteca Virtual</h1></div>
+            
+            
+            
+        </div>
+        
+        
+        <div id="menu"> 
+        	<a href="">Inicio</a> 
+        	<a href="">Busca un libro</a> 
+        	<a href="">Agrega un libro</a> 
+        	<a href="">Catálogo</a> 
+        	<a href="">Temas</a> 
+        	<a href="">Autores</a></div>
+        
+        
+        
+        <form name="datos">
+			
+			<fieldset>
+			<legend><h3>Registro</h3></legend>
+						
+			<label for="nombre">Nombre Completo</label>
+			<input type="text" id="nombre" name="nombre" /> <br><br>
+			
+			<label for="email">E-mail</label> 
+			<input type="text" id="email" name="email" /><br><br>
+			
+			<label for="usuario">Usuario</label> 
+			<input type="text" id="usuario" name="usuario" /><br><br>
+			
+			<label for="contrasena">Contraseña</label>
+			<input type="text" id="contrasena" name="contrasena" /> <br><br>
+			
+			<input type="button" value="Registro" onclick="enviar();"/>
+			
+			
+			</fieldset>
+			
+	
+		</form>
+        
+	        <div id="footer">
+	        	<a href="">Inicio</a> <a href="">Acerca de nosotros</a>  <a href="">Contacto</a> <br />
+	        	Biblioteca Virtual Copyright 2015
+	        	
+	        </div>
+        </div>
+    </body>
+</html>

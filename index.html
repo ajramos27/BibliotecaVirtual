@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -8,27 +8,37 @@ and open the template in the editor.
     <head>
         <title>Bienvenido a la Biblioteca Virtual</title>
         <link rel="stylesheet" type="text/css" href="estilos.css" title="style">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta charset="UTF-8" />
+        <script type="text/javascript" src="login.js"> </script>
     </head>
+    
     <body>
     	<div id="todo">
-        <header>
+        
+        <div id="header">
             <div id="logotipo"> <img src="ebooks-laptop2.jpg" width="250" height="150"></div>
             <div id="titulo"><h1>Biblioteca Virtual</h1></div>
             
             <div id="login">
             Inicia sesión <br>
-            Nombre de usuario: <input type="text" id="nombreUsuario"> <br>
+            Nombre de usuario: <input type="text" id="usuario"> <br>
             Contraseña: <input type="password" id="contrasena"> <br>
-            <input type="button" value="Iniciar sesion" id="iniciaSesion"><br>
+            <input type="button" value="Iniciar sesion" id="iniciaSesion" onclick="validar();"><br>
             
-            ¿No tienes una cuenta? <a href="">Regístrate</a>
+            ¿No tienes una cuenta? <a href="registro.html">Regístrate</a>
         
             </div>
             
-        </header>
+        </div>
         
-        <div id="menu"> <a href="">Inicio</a> <a href="">Busca un libro</a> <a href="">Agrega un libro</a> <a href="">Catálogo</a> <a href="">Temas</a> <a href="">Autores</a></div>
+        
+        <div id="menu"> 
+        	<a href="">Inicio</a> 
+        	<a href="">Busca un libro</a> 
+        	<a href="">Agrega un libro</a> 
+        	<a href="">Catálogo</a> 
+        	<a href="">Temas</a> 
+        	<a href="">Autores</a></div>
         
         
         
@@ -52,11 +62,11 @@ and open the template in the editor.
             </div>
         </div>
         
-        <footer>
-        	<a href="">Inicio</a> <a href="">Acerca de nosotros</a>  <a href="">Contacto</a> <br />
-        	Biblioteca Virtual Copyright 2015
-        	
-        </footer>
+	        <div id="footer">
+	        	<a href="">Inicio</a> <a href="">Acerca de nosotros</a>  <a href="">Contacto</a> <br />
+	        	Biblioteca Virtual Copyright 2015
+	        	
+	        </div>
         </div>
     </body>
 </html>
